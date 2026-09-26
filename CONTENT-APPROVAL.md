@@ -7,7 +7,7 @@ Insights is deferred to a separately scoped CMS publishing phase and removed fro
 Still needed:
 
 - Original vector/high-resolution logo. The supplied portraits for Rufina Okafor and Eluma Harriet are now included; their existing biography roles are retained.
-- Full Abuja office address and production-domain/DNS details.
+- Production-domain/DNS details. The confirmed Abuja office address is now published: UYK HEXAHUB, Area 11, Garki, Abuja.
 - Confirmation of the two practice-leadership descriptions (both partner biographies say they lead IP, Entertainment and Technology), and the acronym "AOPI" in the commercial IP copy. Both are preserved as supplied pending clarification.
 - Confirmation of the display name "Eluma Harriet" versus the fuller "Eluma Harriet Chineze" in the biography, if a different profile heading is preferred.
 
