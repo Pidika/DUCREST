@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   title: {default:"Ducrest Partners | Intellectual Property & Technology Law",template:"%s | Ducrest Partners"},
   description: "Legal advisory, transactional, regulatory and dispute resolution services for creators, technology-driven businesses and creative enterprises in Nigeria.",
   icons: {
-    icon: asset('/favicon.svg'),
-    shortcut: asset('/favicon.svg'),
+    icon: asset('/favicon.svg?v=ducrest-original-2'),
+    shortcut: asset('/favicon.svg?v=ducrest-original-2'),
   },
 };
 
