@@ -6,6 +6,7 @@ import '@fontsource/eb-garamond/400-italic.css';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import '@fontsource/inter/600.css';
+import {SiteMotion} from '@/components/site/experience';
 import { Header } from '@/components/site/header';
 import { Footer } from '@/components/site/content';
 
@@ -25,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body><a href="#main-content" className="skip-link">Skip to content</a><Header/><main id="main-content">{children}</main><Footer/></body>
+      <body><SiteMotion/><a href="#main-content" className="skip-link">Skip to content</a><Header/><main id="main-content">{children}</main><Footer/></body>
     </html>
   );
 }

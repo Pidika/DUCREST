@@ -29,7 +29,7 @@ Upload the **contents of this website folder** to the root of its own GitHub rep
 3. Push to `main` or run **Publish Ducrest website** from the Actions tab.
 4. The completed deployment supplies the public Pages URL.
 
-The workflow sets the repository base path automatically for both navigation and local assets. If using a custom domain, configure it in Pages settings before the build. The website is not yet uploaded or published.
+The workflow sets the repository base path automatically for both navigation and local assets. If using a custom domain, configure it in Pages settings before the build. Client preview: https://pidika.github.io/DUCREST/ — published from the main branch.
 
 The parent folder's `index.html` and GitHub workflow are the separate client **design presentation**. Keep the presentation and this working site in separate repositories, or deliberately choose one deployment workflow.
 

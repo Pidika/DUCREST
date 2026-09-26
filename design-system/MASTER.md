@@ -13,3 +13,5 @@ Composition: 1360px maximum content container. Desktop gutters 5–6vw; mobile 2
 Interaction: React and Motion for React. Short transforms/opacity only. No scroll locking outside an open dialog, no cursor replacement, no autoplay carousels. Semantic anchors and controls; visible focus; 44px targets. Mobile navigation uses the existing accessible Sheet primitive.
 
 Content: use the supplied source research. No fabricated client endorsements, statistics, credentials, office addresses or case studies. Correct grammar without adding claims. Legal-policy approval and the missing Abuja address remain in the internal client request list, not in public design notes.
+
+Upgrade: full-bleed photographic hero with burgundy contrast overlay; staggered masked headline entrance; Motion scroll-linked parallax and reading progress; scroll-revealed editorial sections; sticky expertise index; staggered portraits and circular contact invitation. Reduced motion renders the final static state. No artificial metrics or testimonials.
