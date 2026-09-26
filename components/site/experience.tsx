@@ -8,6 +8,12 @@ import {asset} from '@/lib/asset';
 
 export function SiteMotion(){
  const pathname=usePathname();const reduced=useReducedMotion();
+ const previousPath=useRef(pathname);
+ useEffect(()=>{
+  if(previousPath.current===pathname)return;
+  previousPath.current=pathname;
+  if(!window.location.hash)window.scrollTo({top:0,behavior:'instant'});
+ },[pathname]);
  const {scrollYProgress}=useScroll();const progress=useSpring(scrollYProgress,{stiffness:100,damping:30,restDelta:.001});
  useEffect(()=>{
   if(reduced)return;
