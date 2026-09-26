@@ -1,0 +1,64 @@
+{
+  "about": [
+    "Ducrest Partners is a technology and intellectual property-focused law firm providing sophisticated legal advisory, transactional, regulatory, and dispute resolution services to technology-driven companies, startups, creative enterprises, and financial companies across Nigeria and the wider African continent.",
+    "At Ducrest, we understand that businesses operating at the intersection of technology, creativity, intellectual property, and innovation require more than conventional legal advice. They require commercially astute counsel capable of anticipating risk, protecting valuable assets, navigating regulatory complexity, and providing decisive solutions when disputes arise.",
+    "Our Intellectual Property Dispute Resolution and Brand Protection Practice is distinguished by its strategic approach, technical depth, and consistent record of delivering effective outcomes. We combine robust contractual frameworks, proactive enforcement strategies, regulatory compliance advisory, and rigorous dispute resolution capabilities with a practical understanding of the commercial realities confronting businesses in Nigeria's rapidly evolving digital economy.",
+    "We work closely with our clients to protect and maximise the value of their intellectual property, brands, creative assets, and commercial interests, while providing clear, commercially focused legal solutions designed to support sustainable growth and long-term business objectives."
+  ],
+  "mission": "To arm creators, innovators and technology-driven businesses with the legal architecture needed to defend their intellectual property, maximize their commercial leverage, and secure the full value their work and enterprise deserve.",
+  "vision": "To be a vanguard of Africa's creative and technology economy, fostering a standard where creators and founders hold genuine control over their work, and intellectual property is protected and built as a lasting, generational asset.",
+  "values": [
+    {
+      "title": "Resilience",
+      "body": "As our name presupposes, we thrive on resolving complex legal issues and securing the best possible outcomes even in the most nuanced and difficult matters, whether an IP dispute, a regulatory question, or a high-stakes negotiation."
+    },
+    {
+      "title": "Integrity",
+      "body": "Integrity lies at the heart of our practice. We uphold the highest ethical standards, act with honesty and transparency, and earn our clients' trust through consistent professionalism and accountability."
+    },
+    {
+      "title": "Result-Driven Ethos",
+      "body": "Above all, our practice is anchored in outcomes achieved, not hours billed, aligning our legal strategy closely with our clients' commercial goals."
+    }
+  ],
+  "services": [
+    {
+      "title": "Commercial Intellectual Property",
+      "body": "The Firm provides comprehensive professional services across all areas of commercial intellectual property, including trade marks, copyright, design rights, and trade names. We advise on trade protection strategy and actively pursue registration on behalf of our clients before the relevant Registry, including ARIPO and WIPO filings where a client's portfolio extends beyond Nigeria. Beyond registration, we draft and negotiate licensing agreements, conduct IP audits to identify and value a client's total IP assets, and advise on chain-of-title documentation for derivative works, including musical interpolations and sampling clearances. Our objective is always the same: to ensure our clients own and can commercially exploit what they have created.",
+      "id": "commercial-ip",
+      "summary": "Own and commercially exploit what you create."
+    },
+    {
+      "title": "IP Litigation & Enforcement",
+      "body": "Registering a right is only half the work; defending it is the other half. The Firm provides vigorous litigation and enforcement services where a client's trade mark, copyright, design right, or trade name is threatened or infringed, including cease-and-desist enforcement, anti-piracy and cybersquatting action, and high-stakes litigation for copyright and trade mark infringement. We also represent clients in brand conflict resolution and passing-off actions, and in disputes over unauthorised commercial use of proprietary content and technology, pursuing the remedy, whether injunctive relief, damages, or a negotiated settlement, that best serves the client's underlying commercial interest.",
+      "id": "litigation",
+      "summary": "Defend your rights, your brand and your commercial interests."
+    },
+    {
+      "title": "Technology, Fintech & Data Protection",
+      "body": "The Firm advises technology and fintech operators on the legal and regulatory realities of building and scaling a digital business in Nigeria. Our services span product and platform compliance, data protection frameworks under the Nigerian Data Protection Act and international frameworks such as the GDPR, and the drafting of privacy policies, terms of service, and cross-border data transfer agreements. We prepare SaaS, software licensing, and app development agreements for clients building proprietary technology platforms, and advise on emerging areas including artificial intelligence, Web3, and blockchain, from AI licensing agreements to smart contracts, helping clients anticipate legal questions before they become disputes, and engage confidently with the regulators overseeing the digital economy.",
+      "id": "technology",
+      "summary": "Navigate the legal realities of building a digital business."
+    },
+    {
+      "title": "Media & Entertainment",
+      "body": "The Firm advises extensively across the entertainment and media industries, with a particular depth of experience in music law. We draft and negotiate recording contracts, publishing agreements, split sheets, and producer agreements, and advise on catalogue monetisation and royalty collection. Our practice extends to film, television, and broadcasting, covering talent and crew agreements, option and literary purchase agreements, and broadcasting compliance, as well as live events and touring, including venue agreements, tour sponsorships, and performance contracts. We also negotiate endorsement and merchandising arrangements, including name, image, and likeness rights and brand ambassadorships, on behalf of the creators and performers we represent.",
+      "id": "entertainment",
+      "summary": "Protect the agreements and rights behind creative work."
+    }
+  ],
+  "people": [
+    {
+      "name": "Chukwudi Chimezie",
+      "image": "chimezie.jpg",
+      "focus": "Intellectual Property, Entertainment & Technology",
+      "bio": "Leads Ducrest Partners' Intellectual Property, Entertainment and Technology practice. Holds an LL.B from Abia State University and a B.L from the Nigerian Law School. Member of the NBA Section on Business Law."
+    },
+    {
+      "name": "Chiemeka Ohajionu",
+      "image": "chiemeka.jpg",
+      "focus": "Disputes, Brand Protection & Emerging Technology",
+      "bio": "Co-founding partner of the firm. Leads litigation and alternative dispute resolution and brand protection, with work extending into emerging technology and Web3 advisory, helping clients navigate the legal questions raised by new digital business models."
+    }
+  ]
+}
