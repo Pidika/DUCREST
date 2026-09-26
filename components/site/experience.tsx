@@ -31,9 +31,9 @@ export function CinematicHero(){
   <motion.div className="cinematic-photo" style={reduced?undefined:{y,scale}}><img src={asset('/images/hero.jpg')} alt="A lawyer working in a law library" width="1400" height="933" fetchPriority="high"/></motion.div>
   <div className="hero-shade"/><div className="hero-fine-lines" aria-hidden="true"/>
   <motion.div className="wrap cinematic-copy" style={reduced?undefined:{y:copyY}}>
-   <p className="eyebrow light hero-kicker">Independent thinking. Focused counsel.</p>
-   <h1 aria-label="We Protect. We Build. We Defend.">{['We Protect.','We Build.','We Defend.'].map((line,i)=><span className="headline-mask" key={line}><span className={'hero-line hero-line-'+i}>{i===1?<em>{line}</em>:line}</span></span>)}</h1>
-   <div className="hero-summary"><p>For the ideas you create.<br/>The businesses you build.<br/>And everything worth defending.</p><Link className="button button-light" href="/expertise/">Explore our expertise <ArrowUpRight size={20} aria-hidden="true"/></Link></div>
+   <p className="eyebrow light hero-kicker">Ducrest Partners · Lagos &amp; Abuja</p>
+   <h1 className="client-headline" aria-label="Local Expertise. Global Perspective.">{['Local Expertise.','Global Perspective.'].map((line,i)=><span className="headline-mask" key={line}><span className={'hero-line hero-line-'+i}>{i===1?<em>{line}</em>:line}</span></span>)}</h1>
+   <div className="hero-summary"><p>A commercial law firm with specialised depth in the industries shaping the next generation of business.</p><Link className="button button-light" href="/expertise/">Explore our expertise <ArrowUpRight size={20} aria-hidden="true"/></Link></div>
   </motion.div>
   <div className="wrap cinematic-bottom"><span>Intellectual property · Technology · Entertainment</span><a href="#introduction" className="scroll-cue"><span>Scroll to discover</span><span className="scroll-circle"><ArrowDown size={18} aria-hidden="true"/></span></a></div>
   <span className="hero-side-label" aria-hidden="true">Lagos / Abuja — Nigeria</span>

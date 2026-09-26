@@ -1,64 +1,270 @@
 {
+  "tagline": "Local Expertise. Global Perspective.",
+  "positioning": "A commercial law firm with specialised depth in the industries shaping the next generation of business.",
   "about": [
-    "Ducrest Partners is a technology and intellectual property-focused law firm providing sophisticated legal advisory, transactional, regulatory, and dispute resolution services to technology-driven companies, startups, creative enterprises, and financial companies across Nigeria and the wider African continent.",
-    "At Ducrest, we understand that businesses operating at the intersection of technology, creativity, intellectual property, and innovation require more than conventional legal advice. They require commercially astute counsel capable of anticipating risk, protecting valuable assets, navigating regulatory complexity, and providing decisive solutions when disputes arise.",
-    "Our Intellectual Property Dispute Resolution and Brand Protection Practice is distinguished by its strategic approach, technical depth, and consistent record of delivering effective outcomes. We combine robust contractual frameworks, proactive enforcement strategies, regulatory compliance advisory, and rigorous dispute resolution capabilities with a practical understanding of the commercial realities confronting businesses in Nigeria's rapidly evolving digital economy.",
-    "We work closely with our clients to protect and maximise the value of their intellectual property, brands, creative assets, and commercial interests, while providing clear, commercially focused legal solutions designed to support sustainable growth and long-term business objectives."
+    "Ducrest Partners is a sector-focused technology and intellectual property law firm delivering sophisticated legal advisory, transactional, regulatory, and dispute resolution services to technology-driven companies, startups, creative enterprises, and financial institutions across Nigeria and the wider African continent.",
+    "Our firm is distinguished by its deep understanding of local and international legal frameworks and its ability to navigate the intersection of law, business, and policy. We advise a diverse portfolio of clients, including creatives, multinational corporations, financial institutions, and high-net-worth individuals, on high-stakes intellectual property transactions, regulatory compliance, dispute resolution, and cross-border matters.",
+    "We align our legal strategies with our clients’ commercial goals and handle every engagement with care, discretion, and clarity. Our lawyers are not only legal advisers but trusted partners, committed to safeguarding our clients’ interests and achieving practical, enforceable, and forward-thinking outcomes.",
+    "Ducrest Partners operates to the highest international standards, combining global insights with local expertise to deliver value beyond advice. We work closely with our clients to protect and maximise the value of their intellectual property, brands, creative assets, and commercial interests, while providing clear, commercially focused legal solutions built to support sustainable growth."
   ],
-  "mission": "To arm creators, innovators and technology-driven businesses with the legal architecture needed to defend their intellectual property, maximize their commercial leverage, and secure the full value their work and enterprise deserve.",
+  "mission": "To arm creators, innovators, and technology-driven businesses with the legal architecture needed to defend their intellectual property, maximise their commercial leverage, and secure the full value their work and enterprise deserve.",
   "vision": "To be a vanguard of Africa's creative and technology economy, fostering a standard where creators and founders hold genuine control over their work, and intellectual property is protected and built as a lasting, generational asset.",
+  "valuesIntro": "At Ducrest Partners, our work is guided by a clear and deliberately cultivated set of core values. These are not abstract aspirations; they are the practical standards that define who we are, how we make decisions under pressure, and how we serve our clients on every mandate we accept.",
   "values": [
     {
       "title": "Resilience",
-      "body": "As our name presupposes, we thrive on resolving complex legal issues and securing the best possible outcomes even in the most nuanced and difficult matters, whether an IP dispute, a regulatory question, or a high-stakes negotiation."
+      "body": "As our name presupposes, we thrive on resolving complex legal issues and securing the best possible outcomes, even in the most nuanced and difficult matters, whether an IP dispute, a regulatory question, or a high-stakes negotiation."
     },
     {
       "title": "Integrity",
       "body": "Integrity lies at the heart of our practice. We uphold the highest ethical standards, act with honesty and transparency, and earn our clients' trust through consistent professionalism and accountability."
     },
     {
+      "title": "Precision",
+      "body": "Precision reflects our commitment to excellence in legal analysis and execution. We approach every mandate, from a filing to a complex dispute, with meticulous attention to detail."
+    },
+    {
+      "title": "Innovation",
+      "body": "Innovation drives our ability to adapt and create value in a fast-evolving technological, creative, and regulatory landscape, addressing the novel challenges our clients' industries present."
+    },
+    {
+      "title": "Excellence",
+      "body": "Excellence defines our pursuit of quality in everything we do. We consistently strive to exceed our clients' expectations on every engagement we undertake."
+    },
+    {
       "title": "Result-Driven Ethos",
-      "body": "Above all, our practice is anchored in outcomes achieved, not hours billed, aligning our legal strategy closely with our clients' commercial goals."
+      "body": "Above all, our practice is anchored in outcomes achieved, aligning our legal strategy closely with our clients' commercial goals."
     }
   ],
+  "story": [
+    {
+      "title": "Where we started",
+      "paragraphs": [
+        "The entertainment, technology and intellectual property industries have grown faster than almost any sector around them. Across Nigeria and the wider African continent, artists, creators and founders are building businesses with global reach, and the legal questions they face have become more specific, more technical and more consequential.",
+        "We have seen what that means up close. An artist weighing a deal that will shape the next decade of their career. A creator trying to understand exactly where their royalties flow. A founder thinking through how a new product will sit with regulators. A business discovering that its most valuable asset is something it cannot touch.",
+        "These are the moments where careers and companies are built. They deserve advice that is commercially grounded, attentive to the people involved and shaped by a close understanding of how these industries really work, both at home and abroad."
+      ]
+    },
+    {
+      "title": "The question",
+      "paragraphs": [
+        "So, we asked ourselves a simple question: what would it look like to advise this industry from within? From inside the deal, inside the culture, inside the code.",
+        "Our answer was to build a firm that begins with intellectual property, entertainment and technology, and grows outward from there."
+      ]
+    },
+    {
+      "title": "Our conviction",
+      "paragraphs": [
+        "Behind every contract is a career. Behind every product, someone's belief in the future. Behind every dispute, someone who trusted the system to protect them and needed it to.",
+        "In an industry this fast and this personal, specialist understanding makes all the difference.",
+        "That belief shaped how we built Ducrest Partners: around four pillars, each one chosen deliberately and designed to work together."
+      ]
+    },
+    {
+      "title": "The engine beneath the pillars",
+      "paragraphs": [
+        "Specialist insight only matters if it can be executed. Our corporate commercial, regulatory and transactional capability turns that insight into sound structures, clean transactions, effective governance and workable compliance.",
+        "The result is one integrated firm, built to protect, grow and defend the businesses working at the edge of culture, creativity and technology."
+      ]
+    }
+  ],
+  "pillars": [
+    {
+      "title": "Entertainment",
+      "summary": "Securing the people and value behind the deal.",
+      "body": "We advise artists, creators, producers, platforms and businesses on the deals that shape careers and commercial futures, from rights and representation to licensing, distribution and strategic partnerships. Every agreement we structure starts with two questions: what is our client building, and what will it need to protect five years from now?"
+    },
+    {
+      "title": "Technology",
+      "summary": "Building for what comes next.",
+      "body": "Technology moves faster than the frameworks written to govern it. We advise founders and businesses on products, platforms, data protection, digital assets, policy and regulatory compliance, and we understand the product before we advise on it. Sound legal thinking belongs in the build from day one."
+    },
+    {
+      "title": "Intellectual Property",
+      "summary": "Safeguarding the assets that make the business valuable.",
+      "body": "In a creative and increasingly digital economy, intellectual property is not an accessory to the business. It is the business. We help clients identify, register, structure, commercialise and enforce the rights beneath their brands, catalogues, content and technology."
+    },
+    {
+      "title": "Dispute Resolution",
+      "summary": "Defending value when the deal breaks down.",
+      "body": "Dispute Resolution runs through the three pillars above. When a collaboration fails, a catalogue is claimed or a platform is challenged, the stakes are commercial, creative and personal at once. We bring sector knowledge to disputes, enforcement and negotiations, so our strategy reflects how these industries actually work."
+    }
+  ],
+  "servicesIntro": "Ducrest Partners offers focused legal services tailored to local and international clients, drawing on cross-disciplinary experience across the following practice areas:",
   "services": [
     {
       "title": "Commercial Intellectual Property",
-      "body": "The Firm provides comprehensive professional services across all areas of commercial intellectual property, including trade marks, copyright, design rights, and trade names. We advise on trade protection strategy and actively pursue registration on behalf of our clients before the relevant Registry, including ARIPO and WIPO filings where a client's portfolio extends beyond Nigeria. Beyond registration, we draft and negotiate licensing agreements, conduct IP audits to identify and value a client's total IP assets, and advise on chain-of-title documentation for derivative works, including musical interpolations and sampling clearances. Our objective is always the same: to ensure our clients own and can commercially exploit what they have created.",
       "id": "commercial-ip",
-      "summary": "Own and commercially exploit what you create."
+      "summary": "Build and defend a complete intellectual property position.",
+      "paragraphs": [
+        "Your brand, your catalogue, your inventions - these are often a company's most valuable assets, yet the most left unprotected. We help clients build and defend a complete intellectual property position across trademarks, patents, copyright, industrial design, and trade names, starting with the right protection strategy and pursuing registration before the relevant Registry, including AOPI, ARIPO and WIPO filings for clients whose portfolios extend beyond Nigeria.",
+        "We negotiate and draft licensing agreements that let clients monetise what they own, run Intellectual Property (IP) audits to identify and properly value a client's full IP portfolio, and structure chain-of-title documentation for derivative works, including musical interpolations and sampling clearances; so ownership is never in question. Whatever the asset, our objective is the same: our clients own what they've created and can exploit it commercially without friction."
+      ]
     },
     {
       "title": "IP Litigation & Enforcement",
-      "body": "Registering a right is only half the work; defending it is the other half. The Firm provides vigorous litigation and enforcement services where a client's trade mark, copyright, design right, or trade name is threatened or infringed, including cease-and-desist enforcement, anti-piracy and cybersquatting action, and high-stakes litigation for copyright and trade mark infringement. We also represent clients in brand conflict resolution and passing-off actions, and in disputes over unauthorised commercial use of proprietary content and technology, pursuing the remedy, whether injunctive relief, damages, or a negotiated settlement, that best serves the client's underlying commercial interest.",
       "id": "litigation",
-      "summary": "Defend your rights, your brand and your commercial interests."
-    },
-    {
-      "title": "Technology, Fintech & Data Protection",
-      "body": "The Firm advises technology and fintech operators on the legal and regulatory realities of building and scaling a digital business in Nigeria. Our services span product and platform compliance, data protection frameworks under the Nigerian Data Protection Act and international frameworks such as the GDPR, and the drafting of privacy policies, terms of service, and cross-border data transfer agreements. We prepare SaaS, software licensing, and app development agreements for clients building proprietary technology platforms, and advise on emerging areas including artificial intelligence, Web3, and blockchain, from AI licensing agreements to smart contracts, helping clients anticipate legal questions before they become disputes, and engage confidently with the regulators overseeing the digital economy.",
-      "id": "technology",
-      "summary": "Navigate the legal realities of building a digital business."
+      "summary": "Stop infringement and preserve the value of your assets.",
+      "paragraphs": [
+        "We provide strategic litigation and enforcement services to protect our clients’ trade marks, copyrights, designs, trade names, and other intellectual property assets. Our work spans cease-and-desist enforcement, anti-counterfeiting and anti-piracy actions, cybersquatting and online infringement, passing-off claims, brand conflicts, and complex trade mark and copyright disputes.",
+        "We take a commercially focused approach to enforcement. Where appropriate, we pursue urgent injunctive relief, damages, account of profits, delivery up, takedown and other available remedies, while also deploying negotiation and alternative dispute resolution where these offer a more effective route to protecting the client’s interests.",
+        "Our objective is not simply to establish that an infringement has occurred, but to stop the infringement, preserve the value of the brand or creative asset, and secure the outcome that best serves the client’s broader commercial interests."
+      ]
     },
     {
       "title": "Media & Entertainment",
-      "body": "The Firm advises extensively across the entertainment and media industries, with a particular depth of experience in music law. We draft and negotiate recording contracts, publishing agreements, split sheets, and producer agreements, and advise on catalogue monetisation and royalty collection. Our practice extends to film, television, and broadcasting, covering talent and crew agreements, option and literary purchase agreements, and broadcasting compliance, as well as live events and touring, including venue agreements, tour sponsorships, and performance contracts. We also negotiate endorsement and merchandising arrangements, including name, image, and likeness rights and brand ambassadorships, on behalf of the creators and performers we represent.",
       "id": "entertainment",
-      "summary": "Protect the agreements and rights behind creative work."
-    }
-  ],
-  "people": [
-    {
-      "name": "Chukwudi Chimezie",
-      "image": "chimezie.jpg",
-      "focus": "Intellectual Property, Entertainment & Technology",
-      "bio": "Leads Ducrest Partners' Intellectual Property, Entertainment and Technology practice. Holds an LL.B from Abia State University and a B.L from the Nigerian Law School. Member of the NBA Section on Business Law."
+      "summary": "Advice across the full lifecycle of creative businesses.",
+      "paragraphs": [
+        "We advise extensively across the entertainment and media industries, combining legal expertise with a practical understanding of the commercial, creative, and intellectual property interests that drive the sector.",
+        "Our entertainment practice covers the full lifecycle of an artist’s business’s interests, including recording and artist agreements, music publishing and administration agreements, split sheets, producer and songwriter agreements, catalogue acquisitions and monetisation, royalty structures and collection, licensing, and related intellectual property matters.",
+        "Our practice also extends across film, television and broadcasting, where we advise on talent and crew agreements, development and production arrangements, option and literary purchase agreements, licensing, distribution, and regulatory and broadcasting compliance. For live entertainment and touring, we advise on venue and promoter agreements, performance contracts, tour sponsorships, artist engagements, and the commercial arrangements that underpin successful events.",
+        "We further advise artists, creators, brands and entertainment businesses on endorsements, sponsorships, merchandising and commercial collaborations, including name, image and likeness rights, brand ambassadorships, licensing, and the protection and commercialisation of personality and brand assets.",
+        "Our approach is deliberately sector-focused: we do not treat entertainment agreements as ordinary commercial contracts. We understand the creative relationships, revenue streams, rights structures and commercial realities behind them, and structure and negotiate transactions with those realities in view."
+      ]
     },
     {
+      "title": "Technology, Fintech & Data Protection",
+      "id": "technology",
+      "summary": "Build and scale a digital business with regulatory clarity.",
+      "paragraphs": [
+        "We advise technology and fintech operators on the legal and regulatory realities of building and scaling a digital business in Nigeria, product and platform compliance, data protection frameworks under the Nigeria Data Protection Act and international frameworks such as the GDPR, and the drafting of privacy policies, terms of service, and cross-border data transfer agreements. We prepare SaaS, software licensing, and app development agreements, and advise on emerging areas including artificial intelligence, Web3, and blockchain; from AI licensing agreements to smart contracts, helping clients anticipate legal questions before they become disputes."
+      ]
+    },
+    {
+      "title": "Web3 and Emerging Technologies",
+      "id": "web3",
+      "summary": "Legal advice for blockchain, digital assets and decentralised finance.",
+      "paragraphs": [
+        "Our Web3 and Emerging Technologies practice advises ventures building at the frontier of blockchain, decentralised finance, and digital assets. With deep experience across the sector, we help clients innovate while staying on the right side of a fast-moving regulatory landscape.",
+        "We provide policy and regulatory advisory under the SEC’s digital asset rules and CBN frameworks, support VASP licensing and the SEC’s Accelerated Regulatory Incubation Programme (ARIP), and advise on AML/CFT compliance, token structuring, smart contract review, and corporate governance."
+      ]
+    },
+    {
+      "title": "Startups Advisory",
+      "id": "startups",
+      "summary": "Support through the full arc of building a company.",
+      "paragraphs": [
+        "We guide founders and emerging businesses through the full arc of building a company — from entity formation and pre-incorporation agreements to formal registration with the Corporate Affairs Commission. We advise on corporate structuring, shareholder and founder agreements, fundraising documentation and investor negotiations, employment and independent contractor agreements, and the non-disclosure and non-compete arrangements that protect a young company's most valuable ideas."
+      ]
+    },
+    {
+      "title": "General Dispute Resolution & Litigation",
+      "id": "dispute-resolution",
+      "summary": "Resolve commercial conflicts and enforce recoverable outcomes.",
+      "paragraphs": [
+        "We provide strategic dispute resolution and litigation services across a broad range of commercial and corporate disputes, including contractual conflicts, shareholder and business disputes, debt recovery, insolvency-related claims, and disputes arising from complex and cross-border transactions.",
+        "Our advocates represent clients at every level of the Nigerian court system, from the Magistrate and High Courts to the Court of Appeal and Supreme Court, with a focus on developing litigation strategies that protect the client’s commercial position while pursuing a timely and effective resolution.",
+        "Where litigation is not the most appropriate or commercially efficient route, we deploy arbitration, mediation and other alternative dispute resolution mechanisms to resolve disputes discreetly and effectively.",
+        "We also recognise that obtaining a judgment is not always the end of a dispute. Where enforcement and recovery are required, we deploy appropriate post-judgment and asset-recovery strategies, including garnishee proceedings, receivership, winding-up and bankruptcy proceedings, asset tracing, and other lawful enforcement mechanisms, with the objective of converting legal victories into meaningful and recoverable outcomes for our clients."
+      ]
+    },
+    {
+      "title": "Corporate Advisory & Compliance",
+      "id": "corporate-advisory",
+      "summary": "Ongoing corporate governance and company secretarial support.",
+      "paragraphs": [
+        "We provide ongoing corporate and company secretarial support, including preparation of statutory notices, recording and maintenance of board and general meeting minutes, and filing of statutory returns under the Companies and Allied Matters Act (CAMA). We advise on corporate governance, regulatory compliance, and the day-to-day duties of directors and officers under Nigerian company law."
+      ]
+    }
+  ],
+  "reach": "Our team brings experience from a platform that operated across Lagos, Abuja, the United Kingdom, and the United States, with international network relationships including International Trademark Association (INTA). This strengthens our ability to coordinate matters in the jurisdiction it happens.",
+  "reachItems": [
+    {
+      "title": "Nigeria",
+      "body": "Offices in Lagos and Abuja"
+    },
+    {
+      "title": "Cross-Border",
+      "body": "Experience supporting matters involving the UK, US, and the wider African business environment."
+    },
+    {
+      "title": "International Standards",
+      "body": "Legal technology and processes built around efficient case management, communication, and international compliance expectations."
+    }
+  ],
+  "teamIntro": "Ducrest Partners is a senior-led, responsive team — a cross-disciplinary group of partners and associates whose combined expertise underpins every mandate the Firm takes on.",
+  "people": [
+    {
       "name": "Chiemeka Ohajionu",
+      "role": "Partner",
       "image": "chiemeka.jpg",
       "focus": "Disputes, Brand Protection & Emerging Technology",
-      "bio": "Co-founding partner of the firm. Leads litigation and alternative dispute resolution and brand protection, with work extending into emerging technology and Web3 advisory, helping clients navigate the legal questions raised by new digital business models."
+      "email": "c.ohajionu@ducrestpartners.com",
+      "phone": "+234 810 163 2500",
+      "bio": "Chiemeka Ohajionu leads litigation and alternative dispute resolution and brand protection, with work extending into emerging technology and Web3 advisory — helping clients navigate the legal questions raised by new digital business models.",
+      "paragraphs": [
+        "Chiemeka leads Ducrest Partners’ Intellectual Property, Entertainment and Technology practice. He provides legal support in the Firm’s Dispute Resolution Department covering Intellectual Property, Brand Protection, Anti-Counterfeiting, and other Commercial Disputes. He was ranked in the 2025 IAM Strategy 300 Long List of the World’s Leading IP Strategists, a global ranking celebrating individuals who are shaping the future of IP practice.",
+        "He served as a member of the Alternative Dispute Resolution (ADR) Committee in the International Trademarks Association (INTA), a global association of brand owners and professionals dedicated to supporting trade marks and complementary intellectual property (IP) to foster consumer trust, economic growth, and innovation, and committed to building a better society through brands. His skills were put towards advising on Emerging Issues in ADR.",
+        "His experience includes, but is not limited to, advising clients such as the Coca-Cola Company, Promasidor Group, Honda Motors Co. Limited, Sanofi SA, Castrol Limited, Louis Vuitton Malletier, Teva Pharmaceutical Industries Limited, Geberit AG, Kerakoll S.p.A and Caterpillar Inc.",
+        "Chiemeka understands and has a refined knowledge of the commercial laws in Nigeria, where his unique and practical approach has resulted in nothing less than quality and exceptional services towards the protection of the Client’s Rights in Nigeria.",
+        "He is currently an Executive Committee member of the Stakeholders in Blockchain Technology Association of Nigeria (SiBAN), where, through his exposure to the evolving digital assets and blockchain ecosystem, he has developed a nuanced understanding of the commercial, regulatory, technological and operational realities confronting businesses and market participants in the sector. His engagement with industry stakeholders, regulators, policymakers, technology companies, virtual asset service providers and other ecosystem participants has enabled him to appreciate the practical challenges that businesses face beyond the black letter of the law.",
+        "Through this combination of legal expertise and direct industry engagement, he is particularly well positioned to advise clients operating at the intersection of technology, digital assets, financial services, intellectual property and emerging business models, providing clients with counsel that understands not only what the law requires, but also how those requirements affect the way their businesses are built, operated and scaled."
+      ]
+    },
+    {
+      "name": "Chukwudi Chimezie",
+      "role": "Partner",
+      "image": "chimezie.jpg",
+      "focus": "Intellectual Property, Entertainment & Technology",
+      "email": "c.chimezie@ducrestpartners.com",
+      "phone": "+234 816 880 2360",
+      "bio": "Leads Ducrest Partners' Intellectual Property, Entertainment and Technology practice. Holds an LL.B from Abia State University and a B.L from the Nigerian Law School. Member of the NBA Section on Business Law.",
+      "paragraphs": [
+        "Chukwudi Chimezie is a commercially astute legal practitioner with a core focus on Intellectual Property, Entertainment Law, Technology, and Dispute Resolution within Nigeria’s rapidly evolving creative economy.",
+        "He has cultivated a robust practice centred on the protection, commercialization, and strategic exploitation of intellectual property, regularly advising clients across FMCG, film, music, technology startups, and foreign investors. He leads the negotiation and structuring of sophisticated, rights-driven transactions within the creative industries, bringing a high level of commercial insight and precision to each engagement.",
+        "Prior to his current role, he gained valuable experience at several leading law firms, where he developed a strong foundation in intellectual property, dispute resolution, and corporate/commercial law. This background has shaped his practical, solutions-oriented approach and his ability to navigate complex, multi-party transactions with clarity, precision, and commercial awareness.",
+        "Chukwudi is also highly regarded for his dispute resolution capabilities, advising on contentious intellectual property and commercial matters. He adopts a strategic and commercially grounded approach to resolving disputes, combining technical expertise with a nuanced understanding of industry dynamics to deliver effective and commercially viable outcomes.",
+        "He has consistently contributed to thought leadership within the sector through a number of publications addressing key legal and commercial developments in Africa’s creative economy. He is also a public speaker and has spoken at several platforms, including the African Film Financing Festival. In 2025, he was awarded Entertainment Lawyer of the Year, reflecting his growing reputation and impact within the industry.",
+        "He continues to play a key role in supporting and shaping the growth of Africa’s creative industries through innovative and forward-thinking legal counsel."
+      ]
+    },
+    {
+      "name": "Rufina Okafor",
+      "role": "Senior Associate",
+      "image": null,
+      "focus": "Corporate Governance, Regulatory Compliance & Financial Services",
+      "email": null,
+      "phone": null,
+      "bio": "Supports the delivery of engagements across the Firm's practice groups, working closely with the partners to ensure every matter receives consistent, responsive attention from instruction through to resolution.",
+      "paragraphs": [
+        "Rufina Okafor is a Nigerian-qualified legal practitioner with extensive experience in corporate governance, regulatory compliance and Financial Services. With a commercially driven, detail-oriented approach, she is adept at aligning legal frameworks with business objectives to foster sustainable organisational growth.",
+        "She has provided strategic legal advisory to diverse institutions across various sectors such as insurance, asset management, and international financial services. Her professional footprint includes work with established institutions and emerging players alike, notably providing counsel to Coronation Insurance Plc, Capitalfield Investment Group Limited, Lifecard International Investment Limited, Nathaniel’s Insurance Brokers Limited and Velocity Transfers UK Ltd.",
+        "Rufina’s experience extends to cross-border financial operations through her work with Velocity Transfers UK Limited. In this capacity, she ensured rigorous adherence to United Kingdom regulatory requirements, maintaining the company’s compliance with His Majesty’s Revenue and Customs (HMRC) and the Financial Conduct Authority (FCA). This experience underscores her ability to navigate multi-jurisdictional complexities and manage high-level regulatory expectations with precision and confidence.",
+        "Currently, Rufina is elevating her professional expertise as a scholar under the prestigious Ireland Fellows Programme, where she is pursuing a Master of Laws (LL.M.)."
+      ]
+    },
+    {
+      "name": "Eluma Harriet",
+      "role": "Associate",
+      "image": null,
+      "focus": "Corporate Practice, Real Estate, Construction & Litigation",
+      "email": null,
+      "phone": null,
+      "bio": "Eluma Harriet Chineze leads diverse legal advisory mandates spanning corporate practice, real estate, construction, and litigation.",
+      "paragraphs": [
+        "She holds a Bachelor of Laws (LLB) with a Second Class Upper division (4.2 GPA) from the University of Nigeria, Faculty of Law, and subsequently completed her professional training at the Nigerian Law School, Abuja, qualifying as a Solicitor and Advocate of the Supreme Court of Nigeria.",
+        "Harriet maintains a robust practice advising corporate clients, commercial entities, and individuals on complex real estate acquisitions, development compliance, construction agreements, and corporate governance frameworks.",
+        "She provides strategic legal representation in commercial litigation, property disputes, and regulatory compliance, combining meticulous drafting capabilities with robust advocacy in dispute resolution.",
+        "Her professional experience includes navigating intricate commercial negotiations, reviewing multi-million-naira transactions, and coordinating administrative and compliance procedures across diverse sectors of the Nigerian economy.",
+        "Harriet possesses a refined knowledge of Nigerian corporate and property laws, where her analytical and practical approach ensures the highest standards of legal service delivery and client asset protection."
+      ]
     }
-  ]
+  ],
+  "sectors": [
+    "Media & Entertainment",
+    "Digital Assets & Web 3",
+    "Technology & Innovation",
+    "Financial Services",
+    "Consumer & Retail",
+    "Fashion & Lifestyle",
+    "Real Estate & Construction"
+  ],
+  "insightCategories": [
+    "Thought Leadership",
+    "Legal Alerts",
+    "Events"
+  ],
+  "contactIntro": "Ducrest Partners is ready to support with decisive, commercially focused enforcement counsel. For inquiries, please contact our team to discuss how we can support your organisation's legal needs.",
+  "address": "Suite 1G, 1st Floor, Lapal House, Lagos Island, Lagos State, Nigeria"
 }
