@@ -5,7 +5,7 @@ import {usePathname} from 'next/navigation';
 import {useState,useEffect} from 'react';
 import {Menu, ArrowUpRight, X} from 'lucide-react';
 import {Sheet,SheetTrigger,SheetContent,SheetTitle,SheetDescription,SheetClose} from '@/components/ui/sheet';
-const navigation=[['The Firm','/the-firm/'],['Expertise','/expertise/'],['Our People','/our-people/'],['Sectors','/sectors/'],['Insights','/insights/']];
+const navigation=[['The Firm','/the-firm/'],['Expertise','/expertise/'],['Our People','/our-people/'],['Sectors','/sectors/']];
 export function Header(){
  const path=usePathname();const [open,setOpen]=useState(false);const [scrolled,setScrolled]=useState(false);
  useEffect(()=>{const update=()=>setScrolled(window.scrollY>40);update();window.addEventListener('scroll',update,{passive:true});return()=>window.removeEventListener('scroll',update);},[]);
