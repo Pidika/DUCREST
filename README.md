@@ -1,6 +1,6 @@
 # Ducrest Partners website
 
-A responsive nine-page website for Ducrest Partners, with the firm's burgundy identity, EB Garamond / Inter typography, real portraits, and Motion for React animations. Includes Home, The Firm, Expertise, Our People, Sectors, Insights, Contact, Legal Notice and Privacy.
+A responsive eleven-page website for Ducrest Partners, with the firm's burgundy identity, EB Garamond / Inter typography, real portraits, and Motion for React animations. Includes Home, The Firm, Expertise, Our People, Sectors, Insights, Contact, Legal Notice, Privacy Policy, Terms of Use and Disclaimer.
 
 ## Run locally
 
@@ -35,6 +35,7 @@ The parent folder's `index.html` and GitHub workflow are the separate client **d
 
 ## Content and assets
 
+- Legal document copy: `lib/legal.json`, transcribed from the firm-supplied documents.
 - Page copy: `lib/content.json` and `app/`.
 - Shared navigation/footer: `components/site/`.
 - Visual system: `app/globals.css` and `design-system/MASTER.md`.
@@ -46,3 +47,5 @@ The parent folder's `index.html` and GitHub workflow are the separate client **d
 Read `CONTENT-APPROVAL.md` before launch. Client-approved final privacy wording remains outstanding; the privacy page currently links to the existing published policy. The logo and imagery are recovered originals pending higher-resolution assets and confirmation of use.
 
 The client-supplied website document is the source for eight practice descriptions, four biographies, six values, four pillars and seven sectors. Insights categories are available, but no articles or events have been supplied.
+
+
