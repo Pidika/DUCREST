@@ -1,9 +1,13 @@
 import type { NextConfig } from "next";
 
+const isVercel = process.env.VERCEL === '1';
+const basePath = isVercel ? '' : process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: isVercel ? undefined : 'export',
   trailingSlash: true,
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  basePath,
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
   images: { unoptimized: true },
 };
 
