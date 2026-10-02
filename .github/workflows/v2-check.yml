@@ -1,0 +1,21 @@
+name: Check v2 website
+on:
+  push:
+    branches: [v2]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build:vercel
+        env:
+          VERCEL: '1'

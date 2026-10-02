@@ -1,6 +1,10 @@
 # Ducrest Partners website
 
-A responsive ten-page website for Ducrest Partners, with the firm's burgundy identity, EB Garamond / Inter typography, real portraits, and Motion for React animations. Includes Home, The Firm, Expertise, Our People, Sectors, Contact, Legal Notice, Privacy Policy, Terms of Use and Disclaimer.
+A responsive website for Ducrest Partners, with the firm's burgundy identity, EB Garamond / Inter typography, real portraits, and Motion for React animations. Includes Home, The Firm, Practice Areas, Our People, Sectors, News & Insights, Contact, Privacy Policy, Terms of Use and Disclaimer.
+
+## v2 review branch
+
+Client corrections are on `v2`. Keep `main` as the fallback. Vercel can generate a Preview deployment from `v2`; do not change the production branch until the client approves. The GitHub Pages workflow publishes only `main`. The v2 workflow checks the build without deploying to Pages.
 
 ## Run locally
 
@@ -48,14 +52,14 @@ The parent folder's `index.html` and GitHub workflow are the separate client **d
 - Legal document copy: `lib/legal.json`, transcribed from the firm-supplied documents.
 - Page copy: `lib/content.json` and `app/`.
 - Shared navigation/footer: `components/site/`.
-- Visual system: `app/globals.css` and `design-system/MASTER.md`.
-- Photography and logo: `public/images/`.
+- Visual system: `app/globals.css`, `app/v2.css` and `design-system/MASTER.md`.
+- Photography: `public/images/`. Supplied vector brand assets and trimmed web variants: `public/brand/`.
 - Phone/email links are functional. There is no enquiry form backend or analytics.
 - Fonts are bundled locally; no Google Fonts network request is required.
 - Motion respects reduced-motion preferences. The mobile menu supports keyboard focus and Escape.
 
-Read `CONTENT-APPROVAL.md` before launch. The supplied Privacy Policy, Terms of Use and Disclaimer are published in full. The confirmed Abuja address and all four team portraits are included. The original logo is displayed in a circular frame.
+Read `CONTENT-APPROVAL.md` before launch. The supplied Privacy Policy, Terms of Use and Disclaimer are published in full. The confirmed Abuja address and all four team portraits are included. The supplied vector wordmark uses berry on light backgrounds and white on dark backgrounds; the favicon uses the supplied icon mark.
 
-The client-supplied website document is the source for eight practice descriptions, four biographies, six values, four pillars and seven sectors. Insights is removed from the public site until the future CMS publishing phase. The original categories remain in the content data for that phase.
+The client-supplied website document is the source for eight practice descriptions, four biographies, six values, four pillars and seven sectors. News & Insights has overview and category pages backed by a typed content adapter. No posts are fabricated. See `CMS-HANDOFF.md` for the future publishing integration, contact delivery and privacy controls.
 
 
