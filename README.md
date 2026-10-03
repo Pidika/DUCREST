@@ -24,15 +24,25 @@ npm run build:github
 
 The GitHub build generates the static website in `out/`. Serve that directory with a local HTTP server to review the production version. Opening generated files directly with `file://` is not supported.
 
-## Import into Vercel
+## Preview on Vercel
 
-1. In Vercel, choose **Add New → Project** and import `Pidika/DUCREST`, branch `main`.
+Vercel is used only for development and client review. It is not the production host.
+
+1. In Vercel, choose **Add New → Project** and import `Pidika/DUCREST`, branch `v2`.
 2. Keep **Root Directory** as `./` (the GitHub repository already contains the website at its root).
 3. Use the **Next.js** framework preset and **Node.js 22.x**. The checked-in `vercel.json` configures `npm ci` and `npm run build:vercel` automatically.
-4. Leave **Output Directory** at the framework default. No environment variables or database credentials are required.
-5. Deploy, then share the production `.vercel.app` URL. Check it in a signed-out browser before sending to the client; deployment protection settings may require access or a sharing link.
+4. Leave **Output Directory** at the framework default. Add preview credentials from `.env.example` when the integrations are enabled.
+5. Deploy, then share the preview `.vercel.app` URL. Check it in a signed-out browser before sending to the client; deployment protection settings may require access or a sharing link.
 
 On Vercel, Next.js uses root-relative navigation and image paths. The `/DUCREST` prefix is only used by the GitHub Pages build. Existing GitHub Pages publishing remains supported.
+
+## Production on Namecheap
+
+The production target is the client's Namecheap hosting account and the public origin is `https://ducrestpartners.com`. The enquiry endpoint requires a server-side Node.js runtime because the Supabase service-role key, Resend API key and Turnstile secret must never be shipped in static browser files.
+
+Before deployment, confirm that the Namecheap plan exposes **Setup Node.js App** in cPanel and supports Node.js 22. Configure the application at the domain root, run the production build on the server, and add every value from `.env.example` through the application's environment-variable controls. Keep `.env` outside `public_html` if the host requires a physical file.
+
+If the plan is static/PHP-only, upgrade to a Node.js-capable Namecheap plan or place the server endpoint on a separate supported runtime. Do not embed server credentials into a static export. Vercel remains a preview environment only.
 
 ## Publish with GitHub Pages
 

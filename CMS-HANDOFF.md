@@ -1,6 +1,6 @@
 # News & Insights: publishing handoff
 
-The v2 interface is ready for the separately commissioned CMS integration. No CMS account, admin interface or publishing service has been created.
+The v2 interface is being prepared for Sanity publishing. Production will run on the client's Namecheap hosting; Vercel is used only for previews.
 
 - `lib/insights.ts` defines category slugs, post fields and the async published-content adapter.
 - Public categories: Thought Leadership, Legal Alerts, Events & Media.
@@ -8,11 +8,11 @@ The v2 interface is ready for the separately commissioned CMS integration. No CM
 - Future article URLs: `/insights/posts/[slug]/`. Add this route and the article template as part of CMS integration before returning posts from the adapter.
 - Required content: title, unique slug, excerpt, category, author, publish date, status, structured body. Optional image requires alt text; SEO overrides are optional.
 - Public queries must exclude drafts and future publication dates. Preview access must be authenticated, with CMS tokens on the server only.
-- Connect publishing to Vercel revalidation or deployment, including unpublish/delete behaviour. Add pagination, media handling and the selected editor's workflow during integration.
+- Connect publishing to on-demand revalidation on the production Node.js application, including unpublish/delete behaviour. Add pagination, media handling and the selected editor's workflow during integration.
 
 ## Contact form
 
-The user explicitly deferred delivery integration. The form currently validates input and prepares a user-controlled email draft; it never claims delivery or stores enquiry data. Replace this handoff with a server endpoint after choosing a delivery service. Add server validation, spam protection, request limits and success/failure feedback. Keep credentials server-side and test delivery to the confirmed inbox.
+The selected production flow is Turnstile verification, Supabase persistence and Resend notification. The form currently prepares an email draft until that server endpoint is connected. Keep every secret server-side, validate all fields again on the server, store the enquiry before attempting email delivery, and report distinct storage and delivery outcomes.
 
 ## Privacy notice
 
