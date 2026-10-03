@@ -42,8 +42,8 @@ export function PrivacyNotice() {
             </div>
             <DialogTitle>Cookies and your privacy</DialogTitle>
             <DialogDescription>
-              This website uses only storage that is necessary to remember your privacy choice and
-              support the site&apos;s basic operation.
+              This website uses only technology needed to remember your privacy choice, operate the
+              site and protect the enquiry form from automated abuse.
             </DialogDescription>
           </DialogHeader>
 
@@ -51,7 +51,7 @@ export function PrivacyNotice() {
             <div className="privacy-category">
               <div>
                 <strong>Strictly necessary</strong>
-                <span>Preference storage on this device · retained for 90 days</span>
+                <span>Preference storage for 90 days and Cloudflare Turnstile form security</span>
               </div>
               <span className="privacy-status privacy-status-active">Always active</span>
             </div>
@@ -73,9 +73,10 @@ export function PrivacyNotice() {
 
           <p className="privacy-detail">
             Ducrest Partners does not use this website to profile visitors or share browsing data
-            with advertisers. If optional services are introduced later, they will remain disabled
-            until you are offered a new choice. You can review this notice again from the Privacy
-            settings link in the footer.
+            with advertisers. Cloudflare Turnstile processes limited technical signals to protect
+            the enquiry form and does not receive the form message. If optional services are
+            introduced later, they will remain disabled until you are offered a new choice. You can
+            review this notice again from the Privacy settings link in the footer.
           </p>
 
           <DialogFooter className="privacy-actions">

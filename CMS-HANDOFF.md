@@ -2,6 +2,10 @@
 
 The v2 interface is being prepared for Sanity publishing. Production will run on the client's Namecheap hosting; Vercel is used only for previews.
 
+- `studio/` contains the separate Sanity Studio project and the author and publication schemas.
+- Install the Studio with `cd studio && npm install`, copy `studio/.env.example` to `studio/.env`, and run `npm run dev`.
+- Deploy the Studio with `npm run deploy` after the Sanity project ID is available.
+
 - `lib/insights.ts` defines category slugs, post fields and the async published-content adapter.
 - Public categories: Thought Leadership, Legal Alerts, Events & Media.
 - `components/site/insights-index.tsx` renders the overview and category listings from that adapter. It displays an honest empty state until approved posts exist.
@@ -12,7 +16,12 @@ The v2 interface is being prepared for Sanity publishing. Production will run on
 
 ## Contact form
 
-The selected production flow is Turnstile verification, Supabase persistence and Resend notification. The form currently prepares an email draft until that server endpoint is connected. Keep every secret server-side, validate all fields again on the server, store the enquiry before attempting email delivery, and report distinct storage and delivery outcomes.
+The selected production flow is Turnstile verification, Supabase persistence and Resend notification. The server endpoint and form workflow are implemented and remain disabled until the environment keys are connected. Keep every secret server-side, validate all fields again on the server, store the enquiry before attempting email delivery, and report distinct storage and delivery outcomes.
+
+- Run `db/enquiries.sql` in the Supabase SQL editor once.
+- The browser submits to `POST /api/enquiries`; the server verifies Turnstile before any storage or delivery.
+- Enquiries are written before Resend is called, so an email-provider failure does not lose the submission.
+- The Supabase anonymous role cannot read or insert enquiries. Only the server-side service-role key inserts; authenticated staff can read and update records.
 
 ## Privacy notice
 

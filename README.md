@@ -42,6 +42,8 @@ The production target is the client's Namecheap hosting account and the public o
 
 Before deployment, confirm that the Namecheap plan exposes **Setup Node.js App** in cPanel and supports Node.js 22. Configure the application at the domain root, run the production build on the server, and add every value from `.env.example` through the application's environment-variable controls. Keep `.env` outside `public_html` if the host requires a physical file.
 
+The client confirmed that **Setup Node.js App** is available. Use `npm ci && npm run build:namecheap` for the production build and `npm run start:namecheap` as the application start command. The build produces a standalone Next.js server. Configure the cPanel application URL for both `ducrestpartners.com` and `www.ducrestpartners.com`, set `PORT` using the value supplied by cPanel, and restart the Node.js application after changing environment values.
+
 If the plan is static/PHP-only, upgrade to a Node.js-capable Namecheap plan or place the server endpoint on a separate supported runtime. Do not embed server credentials into a static export. Vercel remains a preview environment only.
 
 ## Publish with GitHub Pages
