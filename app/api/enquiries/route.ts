@@ -40,13 +40,12 @@ async function verifyTurnstile(token: string, remoteIp: string) {
 
 async function storeEnquiry(record: Record<string, string | null>) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const key = process.env.SUPABASE_SECRET_KEY;
   if (!url || !key) throw new Error('database_not_configured');
   const response = await fetch(`${url}/rest/v1/enquiries`, {
     method: 'POST',
     headers: {
       apikey: key,
-      Authorization: `Bearer ${key}`,
       'Content-Type': 'application/json',
       Prefer: 'return=representation',
     },

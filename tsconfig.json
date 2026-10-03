@@ -43,6 +43,7 @@
   "exclude": [
     "node_modules",
     "examples",
-    "studio"
+    "studio",
+    ".next/standalone"
   ]
 }

@@ -38,7 +38,7 @@ On Vercel, Next.js uses root-relative navigation and image paths. The `/DUCREST`
 
 ## Production on Namecheap
 
-The production target is the client's Namecheap hosting account and the public origin is `https://ducrestpartners.com`. The enquiry endpoint requires a server-side Node.js runtime because the Supabase service-role key, Resend API key and Turnstile secret must never be shipped in static browser files.
+The production target is the client's Namecheap hosting account and the public origin is `https://ducrestpartners.com`. The enquiry endpoint requires a server-side Node.js runtime because the Supabase secret key, Resend API key and Turnstile secret must never be shipped in static browser files.
 
 Before deployment, confirm that the Namecheap plan exposes **Setup Node.js App** in cPanel and supports Node.js 22. Configure the application at the domain root, run the production build on the server, and add every value from `.env.example` through the application's environment-variable controls. Keep `.env` outside `public_html` if the host requires a physical file.
 

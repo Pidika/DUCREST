@@ -21,7 +21,7 @@ The selected production flow is Turnstile verification, Supabase persistence and
 - Run `db/enquiries.sql` in the Supabase SQL editor once.
 - The browser submits to `POST /api/enquiries`; the server verifies Turnstile before any storage or delivery.
 - Enquiries are written before Resend is called, so an email-provider failure does not lose the submission.
-- The Supabase anonymous role cannot read or insert enquiries. Only the server-side service-role key inserts; authenticated staff can read and update records.
+- The Supabase anonymous role cannot read or insert enquiries. Only the server-side secret key inserts; authenticated staff can read and update records.
 
 ## Privacy notice
 
