@@ -1,9 +1,93 @@
 'use client';
-import {useState,useRef,type FormEvent} from 'react';
+
+import { useRef, useState, type FormEvent } from 'react';
 import Link from 'next/link';
-import {ArrowUpRight} from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import data from '@/lib/content.json';
-export function ContactForm(){const [ready,setReady]=useState(false);const [emailDraft,setEmailDraft]=useState('');const result=useRef<HTMLDivElement>(null);
- function prepare(e:FormEvent<HTMLFormElement>){e.preventDefault();const f=new FormData(e.currentTarget);const message=`Name: ${f.get('name')}\nCompany: ${f.get('company')||'—'}\nEmail: ${f.get('email')}\nTelephone: ${f.get('phone')||'—'}\n\n${f.get('message')}`;setEmailDraft(`mailto:info@ducrestpartners.com?subject=${encodeURIComponent(String(f.get('subject')))}&body=${encodeURIComponent(message)}`);setReady(true);requestAnimationFrame(()=>result.current?.focus())}
- return <form className="enquiry-form" onSubmit={prepare} onChange={()=>setReady(false)}><p className="eyebrow">Send an enquiry</p><h2>Let’s start<br/><em>a conversation.</em></h2><p className="form-intro">Tell us how we can help. Fields marked * are required.</p><div className="form-grid"><label>Full name *<input name="name" autoComplete="name" required maxLength={120}/></label><label>Company / Organisation<input name="company" autoComplete="organization" maxLength={160}/></label><label>Email address *<input name="email" type="email" autoComplete="email" required maxLength={200}/></label><label>Phone number<input name="phone" type="tel" autoComplete="tel" maxLength={40}/></label><label className="full">Subject *<select name="subject" required defaultValue=""><option value="" disabled>Select a practice area or enquiry</option>{data.services.map(s=><option key={s.id}>{s.title}</option>)}<option>General enquiry</option><option>Events & Media</option></select></label><label className="full">Message *<textarea name="message" required maxLength={4000} rows={6} aria-describedby="enquiry-guidance"/></label></div><p id="enquiry-guidance" className="form-note">Please do not include confidential information. Sending an enquiry does not establish an attorney-client relationship. Read our <Link href="/privacy/">Privacy Policy</Link> and <Link href="/disclaimer/">Disclaimer</Link>.</p><button className="button" type="submit">Prepare enquiry <ArrowUpRight size={18}/></button><p className="form-note">You can review your enquiry, then send it through your email application.</p>{ready&&<div className="enquiry-result" ref={result} tabIndex={-1} role="status"><h3>Your enquiry is ready.</h3><p>Nothing has been sent yet. Open the email draft below, review it and send it to info@ducrestpartners.com.</p><a className="text-link" href={emailDraft}>Open email draft <ArrowUpRight size={18}/></a></div>}</form>
+
+export function ContactForm() {
+  const [emailDraft, setEmailDraft] = useState('');
+  const [ready, setReady] = useState(false);
+  const resultRef = useRef<HTMLDivElement>(null);
+
+  function sendEnquiry(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const name = String(data.get('name') ?? '');
+    const company = String(data.get('company') ?? '');
+    const email = String(data.get('email') ?? '');
+    const phone = String(data.get('phone') ?? '');
+    const subject = String(data.get('subject') ?? 'General enquiry');
+    const message = String(data.get('message') ?? '');
+    const body = `Name: ${name}\nCompany: ${company || 'Not provided'}\nEmail: ${email}\nPhone: ${phone || 'Not provided'}\n\n${message}`;
+
+    setEmailDraft(
+      `mailto:info@ducrestpartners.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+    );
+    setReady(true);
+    window.setTimeout(() => resultRef.current?.focus(), 0);
+  }
+
+  return (
+    <form className="enquiry-form" onSubmit={sendEnquiry} onChange={() => setReady(false)}>
+      <p className="eyebrow">Send an enquiry</p>
+      <h2>Let&apos;s start<br/><em>a conversation.</em></h2>
+      <p className="form-intro">Tell us how we can help. Fields marked * are required.</p>
+      <div className="form-grid">
+        <label>
+          <span>Name *</span>
+          <input name="name" autoComplete="name" required maxLength={120} />
+        </label>
+        <label>
+          <span>Company / Organisation</span>
+          <input name="company" autoComplete="organization" maxLength={160} />
+        </label>
+        <label>
+          <span>Email address *</span>
+          <input name="email" type="email" autoComplete="email" required maxLength={200} />
+        </label>
+        <label>
+          <span>Phone number</span>
+          <input name="phone" type="tel" autoComplete="tel" maxLength={40} />
+        </label>
+        <label className="full">
+          <span>Subject *</span>
+          <select name="subject" defaultValue="" required>
+            <option value="" disabled>
+              Select a practice area or enquiry
+            </option>
+            {data.services.map((service) => (
+              <option key={service.id}>{service.title}</option>
+            ))}
+            <option>General enquiry</option>
+            <option>Events &amp; Media</option>
+          </select>
+        </label>
+        <label className="full">
+          <span>Message *</span>
+          <textarea name="message" rows={6} required maxLength={4000} aria-describedby="enquiry-guidance" />
+        </label>
+      </div>
+      <p className="form-note" id="enquiry-guidance">
+        Please do not include confidential information. Sending an enquiry does not establish an
+        attorney-client relationship. Read our <Link href="/privacy/">Privacy Policy</Link> and{' '}
+        <Link href="/disclaimer/">Disclaimer</Link>.
+      </p>
+      <button className="button" type="submit">
+        Send enquiry <ArrowUpRight size={17} aria-hidden="true" />
+      </button>
+      <p className="form-note">
+        This opens an email draft addressed to the firm. Review the draft and use your email
+        application&apos;s send button to deliver it.
+      </p>
+      {ready ? (
+        <div className="enquiry-result" ref={resultRef} tabIndex={-1} role="status">
+          <h3>Your enquiry draft is ready.</h3>
+          <a className="text-link" href={emailDraft}>
+            Open email draft <ArrowUpRight size={16} aria-hidden="true" />
+          </a>
+        </div>
+      ) : null}
+    </form>
+  );
 }

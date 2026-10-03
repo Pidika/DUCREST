@@ -10,3 +10,20 @@
 @media(max-width:760px){.brand .ducrest-logo,.site-header.is-scrolled .brand .ducrest-logo{width:190px;height:46px}.footer-brand .ducrest-logo{width:240px;height:58px}.client-headline{font-size:clamp(34px,7.7vw,58px)!important}.practice-directory,.practice-article,.contact-enquiry,.insight-posts{grid-template-columns:1fr;gap:35px}.practice-card{padding:30px 0}.practice-article aside{position:static}.practice-article aside nav{display:none}.contact-sidebar{padding:28px}.form-grid{gap:22px;grid-template-columns:1fr}.form-grid .full{grid-column:auto}.insights-empty{padding:50px 0 10px}.insights-tabs{gap:8px 20px}.insights-tabs a{font-size:13px}.privacy-dialog[data-slot=dialog-content]{padding:25px}.privacy-dialog [data-slot=dialog-title]{font-size:34px}.ducrest-menu[data-slot=sheet-content]{padding:24px}.menu-heading .ducrest-logo{width:190px}}
 
 .privacy-dialog[data-slot=dialog-content]{max-height:calc(100dvh - 32px);overflow-y:auto}
+
+/* Client correction: readable practice CTA and a complete privacy preference panel. */
+.practice-article .prose .practice-contact-button{color:#fff;text-decoration:none;margin-top:42px;min-width:220px;justify-content:space-between}
+.practice-article .prose .practice-contact-button:hover,.practice-article .prose .practice-contact-button:focus-visible{color:#fff}
+.privacy-dialog[data-slot=dialog-content]{max-width:680px;padding:0;gap:0;border-top:5px solid var(--brand);background:#fcfaf8}
+.privacy-dialog [data-slot=dialog-header]{padding:32px 36px 24px;gap:14px;text-align:left}
+.privacy-kicker{display:flex;align-items:center;gap:9px;color:var(--brand);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.privacy-dialog [data-slot=dialog-title]{font-size:44px}
+.privacy-dialog [data-slot=dialog-description]{max-width:570px;font-size:14px;line-height:1.75;color:#4e4647}
+.privacy-categories{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.privacy-category{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:18px 36px;border-top:1px solid var(--line)}
+.privacy-category:first-child{border-top:0}.privacy-category>div{display:grid;gap:5px;min-width:0}.privacy-category strong{font-size:14px;color:var(--ink)}.privacy-category>div span{font-size:12px;line-height:1.55;color:var(--muted)}
+.privacy-status{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#635a5b}.privacy-status-active{color:var(--brand)}
+.privacy-detail{margin:0;padding:22px 36px 0;font-size:12px!important;line-height:1.75!important;color:#5d5556!important}
+.privacy-actions[data-slot=dialog-footer]{padding:26px 36px 34px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:24px}
+.privacy-actions .button{min-height:52px}.privacy-policy-link{font-size:13px;font-weight:600;color:var(--brand);text-underline-offset:4px}
+@media(max-width:760px){.practice-article .prose .practice-contact-button{margin-top:34px;width:100%}.privacy-dialog [data-slot=dialog-header]{padding:25px 22px 20px}.privacy-dialog [data-slot=dialog-title]{font-size:34px}.privacy-category{grid-template-columns:1fr;gap:8px;padding:16px 22px}.privacy-detail{padding:20px 22px 0}.privacy-actions[data-slot=dialog-footer]{padding:22px;display:grid;gap:16px}.privacy-actions .button{width:100%}.privacy-policy-link{text-align:center;min-height:44px;display:grid;place-items:center}}
