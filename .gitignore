@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+**/node_modules/
+**/.sanity/
 /.pnp
 .pnp.*
 .yarn/*
@@ -39,6 +41,7 @@ yarn-error.log*
 next-env.d.ts
 *.tsbuildinfo
 /dist/
+**/dist/
 /.wrangler/
 # Checkout-local execution profile and tool state; never publish them.
 /.sites-runtime/
