@@ -1,9 +1,9 @@
 'use client';
 
-import { useRef, useState, type FormEvent } from 'react';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Script from 'next/script';
 import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, X } from 'lucide-react';
 import data from '@/lib/content.json';
 
 type SubmissionState = 'idle' | 'submitting' | 'success' | 'error';
@@ -12,7 +12,23 @@ export function ContactForm() {
   const [state, setState] = useState<SubmissionState>('idle');
   const [message, setMessage] = useState('');
   const resultRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
   const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+
+  const dismissResult = () => {
+    setState('idle');
+    setMessage('');
+  };
+
+  useEffect(() => {
+    if (state !== 'success' && state !== 'error') return;
+    closeRef.current?.focus();
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') dismissResult();
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [state]);
 
   async function sendEnquiry(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -55,7 +71,6 @@ export function ContactForm() {
       setState('error');
       setMessage(error instanceof Error ? error.message : 'Your enquiry could not be sent.');
     }
-    window.setTimeout(() => resultRef.current?.focus(), 0);
   }
 
   return (
@@ -75,7 +90,7 @@ export function ContactForm() {
       <p className="form-note" id="enquiry-guidance">Please do not include confidential information. Sending an enquiry does not establish an attorney-client relationship. Read our <Link href="/privacy/">Privacy Policy</Link> and <Link href="/disclaimer/">Disclaimer</Link>.</p>
       {siteKey ? <><Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="afterInteractive" /><div className="cf-turnstile turnstile-field" data-sitekey={siteKey} data-size="flexible" data-action="turnstile-spin-v2" /></> : <p className="form-configuration">Online submission will be enabled when the firm&apos;s security keys are connected. You can still email <a href="mailto:info@ducrestpartners.com">info@ducrestpartners.com</a>.</p>}
       <button className="button" type="submit" disabled={state === 'submitting' || !siteKey}>{state === 'submitting' ? 'Sending…' : 'Send enquiry'} <ArrowUpRight size={17} aria-hidden="true" /></button>
-      {state === 'success' || state === 'error' ? <div className={`enquiry-result ${state}`} ref={resultRef} tabIndex={-1} role={state === 'error' ? 'alert' : 'status'}><h3>{state === 'success' ? 'Enquiry received.' : 'We could not send your enquiry.'}</h3><p>{message}</p>{state === 'error' ? <a className="text-link" href="mailto:info@ducrestpartners.com">Email the firm directly <ArrowUpRight size={16} aria-hidden="true" /></a> : null}</div> : null}
+      {state === 'success' || state === 'error' ? <div className="enquiry-modal-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) dismissResult(); }}><div className={`enquiry-result enquiry-modal ${state}`} ref={resultRef} role="dialog" aria-modal="true" aria-labelledby="enquiry-result-title" aria-describedby="enquiry-result-message"><button ref={closeRef} className="enquiry-modal-close" type="button" onClick={dismissResult} aria-label="Close confirmation"><X size={22} aria-hidden="true" /></button><p className="eyebrow">{state === 'success' ? 'Message delivered' : 'Submission issue'}</p><h3 id="enquiry-result-title">{state === 'success' ? 'Enquiry received.' : 'We could not send your enquiry.'}</h3><p id="enquiry-result-message">{message}</p>{state === 'error' ? <a className="text-link" href="mailto:info@ducrestpartners.com">Email the firm directly <ArrowUpRight size={16} aria-hidden="true" /></a> : <button className="button" type="button" onClick={dismissResult}>Close</button>}</div></div> : null}
     </form>
   );
 }

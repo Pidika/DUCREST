@@ -13,12 +13,42 @@ import { Header } from '@/components/site/header';
 import { Footer } from '@/components/site/content';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ducrestpartners.com'),
   title: {default:"Ducrest Partners | Intellectual Property & Technology Law",template:"%s | Ducrest Partners"},
   description: "Legal advisory, transactional, regulatory and dispute resolution services for creators, technology-driven businesses and creative enterprises in Nigeria.",
   icons: {
     icon: asset('/favicon.svg?v=ducrest-brand-v2'),
     shortcut: asset('/favicon.svg?v=ducrest-brand-v2'),
   },
+  openGraph: {
+    type: 'website',
+    locale: 'en_NG',
+    siteName: 'Ducrest Partners',
+    title: 'Ducrest Partners | Intellectual Property & Technology Law',
+    description: 'Legal advisory, transactional, regulatory and dispute resolution services for creators, technology-driven businesses and creative enterprises in Nigeria.',
+    images: [{url: '/opengraph-image', width: 1200, height: 630, alt: 'Ducrest Partners'}],
+  },
+  twitter: {card: 'summary_large_image', images: ['/opengraph-image']},
+  robots: {index: true, follow: true},
+  verification: process.env.GOOGLE_SITE_VERIFICATION ? {google: process.env.GOOGLE_SITE_VERIFICATION} : undefined,
+};
+
+const legalServiceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LegalService',
+  '@id': 'https://ducrestpartners.com/#firm',
+  name: 'Ducrest Partners',
+  url: 'https://ducrestpartners.com/',
+  logo: 'https://ducrestpartners.com/brand/logo-colour.svg',
+  image: 'https://ducrestpartners.com/opengraph-image',
+  email: 'info@ducrestpartners.com',
+  telephone: '+2348101632500',
+  areaServed: ['Nigeria', 'Africa'],
+  sameAs: ['https://www.linkedin.com/company/ducrestpartners', 'https://www.instagram.com/ducrestpartners'],
+  address: [
+    {'@type': 'PostalAddress', streetAddress: 'Suite 1G, 1st Floor, Lapal House, Lagos Island', addressLocality: 'Lagos', addressRegion: 'Lagos State', addressCountry: 'NG'},
+    {'@type': 'PostalAddress', streetAddress: 'UYK HEXAHUB, Area 11, Garki', addressLocality: 'Abuja', addressCountry: 'NG'},
+  ],
 };
 
 export default function RootLayout({
@@ -28,7 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body><SiteMotion/><a href="#main-content" className="skip-link">Skip to content</a><Header/><main id="main-content">{children}</main><Footer/><PrivacyNotice/></body>
+      <body><script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(legalServiceSchema).replace(/</g, '\\u003c')}}/><SiteMotion/><a href="#main-content" className="skip-link">Skip to content</a><Header/><main id="main-content">{children}</main><Footer/><PrivacyNotice/></body>
     </html>
   );
 }

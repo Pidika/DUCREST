@@ -5,6 +5,8 @@ import data from '@/lib/content.json';
 import {ContactBand,PeoplePreview,Eyebrow} from '@/components/site/content';
 import {CinematicHero,ScrollStatement} from '@/components/site/experience';
 import {Entrance} from '@/components/site/entrance';
+import type {Metadata} from 'next';
+export const metadata:Metadata={alternates:{canonical:'/'}};
 export default function Home(){return <>
 <CinematicHero/>
 <section className="wrap section editorial-intro" id="introduction"><div className="intro-label"><Eyebrow>The Ducrest perspective</Eyebrow><span className="editorial-index" aria-hidden="true">01 / THE FIRM</span></div><div><h2>Your ideas deserve<br/><em>more than protection.</em><br/>They deserve a future.</h2><div className="intro-body"><p>{data.about[0]}</p><div><p>Based in Lagos and Abuja.<br/>Working across Nigeria and Africa.</p><Link className="text-link" href="/the-firm/">Discover the firm <ArrowUpRight size={18}/></Link></div></div></div></section>
