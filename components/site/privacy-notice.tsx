@@ -20,10 +20,15 @@ export function PrivacyNotice() {
 
   useEffect(() => {
     const savedAt = Number(window.localStorage.getItem(STORAGE_KEY));
-    if (!savedAt || Date.now() - savedAt > MAX_AGE) setOpen(true);
+    const showTimer = !savedAt || Date.now() - savedAt > MAX_AGE
+      ? window.setTimeout(() => setOpen(true), 0)
+      : undefined;
     const reopen = () => setOpen(true);
     window.addEventListener('ducrest:privacy', reopen);
-    return () => window.removeEventListener('ducrest:privacy', reopen);
+    return () => {
+      if (showTimer !== undefined) window.clearTimeout(showTimer);
+      window.removeEventListener('ducrest:privacy', reopen);
+    };
   }, []);
 
   function saveChoice() {

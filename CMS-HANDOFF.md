@@ -1,18 +1,18 @@
 # News & Insights: publishing handoff
 
-The v2 interface is being prepared for Sanity publishing. Production will run on the client's Namecheap hosting; Vercel is used only for previews.
+The v2 interface is connected to Sanity publishing. Production will run on the client's Namecheap hosting; Vercel is used only for previews.
 
 - `studio/` contains the separate Sanity Studio project and the author and publication schemas.
 - Install the Studio with `cd studio && npm install`, copy `studio/.env.example` to `studio/.env`, and run `npm run dev`.
-- Deploy the Studio with `npm run deploy` after the Sanity project ID is available.
+- The Studio is deployed at https://ducrest-partners.sanity.studio/. Run `npm run deploy` after future schema changes.
 
 - `lib/insights.ts` defines category slugs, post fields and the async published-content adapter.
 - Public categories: Thought Leadership, Legal Alerts, Events & Media.
 - `components/site/insights-index.tsx` renders the overview and category listings from that adapter. It displays an honest empty state until approved posts exist.
-- Future article URLs: `/insights/posts/[slug]/`. Add this route and the article template as part of CMS integration before returning posts from the adapter.
+- Article URLs use `/insights/posts/[slug]/` and render through the production article template.
 - Required content: title, unique slug, excerpt, category, author, publish date, status, structured body. Optional image requires alt text; SEO overrides are optional.
 - Public queries must exclude drafts and future publication dates. Preview access must be authenticated, with CMS tokens on the server only.
-- Connect publishing to on-demand revalidation on the production Node.js application, including unpublish/delete behaviour. Add pagination, media handling and the selected editor's workflow during integration.
+- Published content refreshes within one minute. On-demand webhook revalidation and pagination can be added later when publishing volume requires them.
 
 ## Contact form
 

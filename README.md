@@ -66,12 +66,12 @@ The parent folder's `index.html` and GitHub workflow are the separate client **d
 - Shared navigation/footer: `components/site/`.
 - Visual system: `app/globals.css`, `app/v2.css` and `design-system/MASTER.md`.
 - Photography: `public/images/`. Supplied vector brand assets and trimmed web variants: `public/brand/`.
-- Phone/email links are functional. There is no enquiry form backend or analytics.
+- Phone/email links are functional. The enquiry backend uses Turnstile, Supabase and Resend; production credentials must pass the checks in `DEPLOYMENT-GUIDE.md`. No analytics is installed.
 - Fonts are bundled locally; no Google Fonts network request is required.
 - Motion respects reduced-motion preferences. The mobile menu supports keyboard focus and Escape.
 
 Read `CONTENT-APPROVAL.md` before launch. The supplied Privacy Policy, Terms of Use and Disclaimer are published in full. The confirmed Abuja address and all four team portraits are included. The supplied vector wordmark uses berry on light backgrounds and white on dark backgrounds; the favicon uses the supplied icon mark.
 
-The client-supplied website document is the source for eight practice descriptions, four biographies, six values, four pillars and seven sectors. News & Insights has overview and category pages backed by a typed content adapter. No posts are fabricated. See `CMS-HANDOFF.md` for the future publishing integration, contact delivery and privacy controls.
+The client-supplied website document is the source for eight practice descriptions, four biographies, six values, four pillars and seven sectors. News & Insights has overview, category and article pages backed by Sanity. The hosted Studio is available at https://ducrest-partners.sanity.studio/. See `CLIENT-CMS-GUIDE.md` for the editor workflow and `DEPLOYMENT-GUIDE.md` for production hosting.
 
 

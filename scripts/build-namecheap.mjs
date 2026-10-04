@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { cpSync, existsSync, mkdirSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 const nextCli = fileURLToPath(new URL('../node_modules/next/dist/bin/next', import.meta.url));
@@ -18,4 +18,5 @@ if (!existsSync(standalone)) throw new Error('Next.js did not produce the standa
 cpSync(publicDir, `${standalone}/public`, { recursive: true });
 mkdirSync(`${standalone}/.next`, { recursive: true });
 cpSync(staticDir, `${standalone}/.next/static`, { recursive: true });
+rmSync(`${standalone}/.env`, { force: true });
 console.log('Namecheap bundle prepared in .next/standalone');
