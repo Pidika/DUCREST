@@ -34,7 +34,7 @@ export function CinematicHero(){
  const {scrollYProgress}=useScroll({target:ref,offset:['start start','end start']});
  const y=useTransform(scrollYProgress,[0,1],['0%','22%']);const scale=useTransform(scrollYProgress,[0,1],[1.04,1.14]);const copyY=useTransform(scrollYProgress,[0,1],[0,100]);
  return <section className="cinematic-hero" ref={ref}>
-  <motion.div className="cinematic-photo" style={reduced?undefined:{y,scale}}><img src={asset('/images/hero.jpg')} alt="A lawyer working in a law library" width="1400" height="933" fetchPriority="high"/></motion.div>
+  <motion.div className="cinematic-photo" style={reduced?undefined:{y,scale}}><img src={asset('/images/ducrest-team.webp')} alt="Three Ducrest Partners team members in the firm's office" width="1280" height="1024" fetchPriority="high"/></motion.div>
   <div className="hero-shade"/><div className="hero-fine-lines" aria-hidden="true"/>
   <motion.div className="wrap cinematic-copy" style={reduced?undefined:{y:copyY}}>
    <p className="eyebrow light hero-kicker">Ducrest Partners · Lagos &amp; Abuja</p>
