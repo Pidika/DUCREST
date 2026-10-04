@@ -16,7 +16,7 @@ The v2 interface is connected to Sanity publishing. Production will run on the c
 
 ## Contact form
 
-The selected production flow is Turnstile verification, Supabase persistence and Resend notification. The server endpoint and form workflow are implemented and remain disabled until the environment keys are connected. Keep every secret server-side, validate all fields again on the server, store the enquiry before attempting email delivery, and report distinct storage and delivery outcomes.
+The selected production flow is Turnstile verification, Supabase persistence and Resend notification. The server endpoint and form workflow are implemented, and the production credentials were validated on 4 October 2026. Keep every secret server-side, validate all fields again on the server, store the enquiry before attempting email delivery, and report distinct storage and delivery outcomes.
 
 - Run `db/enquiries.sql` in the Supabase SQL editor once.
 - The browser submits to `POST /api/enquiries`; the server verifies Turnstile before any storage or delivery.

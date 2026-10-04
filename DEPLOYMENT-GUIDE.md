@@ -5,8 +5,8 @@ The production website runs as a Node.js application on Namecheap cPanel. Vercel
 ## Before deployment
 
 1. Use Node.js **22.23.3** in cPanel.
-2. Replace and validate the Supabase secret key. A request made on 4 October 2026 returned `401 Unauthorized`.
-3. Confirm the Resend API key by sending one controlled test enquiry. The current key has the correct format but does not have permission to read account resources, which can mean either a sending-only key or an invalid key.
+2. The Supabase secret key was validated from the Node.js server runtime on 4 October 2026; the enquiries table returned HTTP 200.
+3. The Resend sending key was validated on 4 October 2026; Resend accepted a controlled deployment-test email for delivery. A sending-only key is intentional and follows least-privilege access.
 4. Confirm the Turnstile widget allows both `ducrestpartners.com` and `www.ducrestpartners.com`.
 5. Keep every secret in cPanel environment variables. Never upload `.env` or place it in `public_html`.
 
@@ -62,4 +62,3 @@ TURNSTILE_SECRET=<production secret>
 4. Publish and unpublish a Sanity test article and verify the website updates within one minute.
 5. Submit a test enquiry and confirm all three stages: Turnstile succeeds, a Supabase row is created, and the Resend email reaches the firm.
 6. Check the application error log after the first production request and first form submission.
-
