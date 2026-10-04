@@ -37,7 +37,7 @@ async function sanityQuery<T>(query: string): Promise<T | null> {
   if (!projectId) return null;
   const url = new URL(`https://${projectId}.api.sanity.io/v2025-02-19/data/query/${dataset}`);
   url.searchParams.set('query', query);
-  const response = await fetch(url, { next: { revalidate: 300, tags: ['insights'] } });
+  const response = await fetch(url, { next: { revalidate: 60, tags: ['insights'] } });
   if (!response.ok) throw new Error(`Sanity query failed with ${response.status}`);
   const payload = await response.json() as { result: T };
   return payload.result;
