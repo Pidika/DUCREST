@@ -35,7 +35,7 @@ export function CinematicHero(){
  const {scrollYProgress}=useScroll({target:ref,offset:['start start','end start']});
  const y=useTransform(scrollYProgress,[0,1],['0%','22%']);const scale=useTransform(scrollYProgress,[0,1],[1.04,1.14]);const copyY=useTransform(scrollYProgress,[0,1],[0,100]);
  return <section className="cinematic-hero" ref={ref}>
-  <motion.div className="cinematic-photo" style={reduced?undefined:{y,scale}}><Image src={asset('/images/ducrest-team.webp')} alt="Three Ducrest Partners team members in the firm's office" width={1280} height={1024} priority sizes="100vw"/></motion.div>
+  <motion.div className="cinematic-photo" style={reduced?undefined:{y,scale}}><Image src={asset('/images/ducrest-partners-office.webp')} alt="Ducrest Partners partners Chukwudi Chimezie and Chiemeka Ohajionu in the firm's office" width={1280} height={1024} priority sizes="100vw"/></motion.div>
   <div className="hero-shade"/><div className="hero-fine-lines" aria-hidden="true"/>
   <motion.div className="wrap cinematic-copy" style={reduced?undefined:{y:copyY}}>
    <p className="eyebrow light hero-kicker">Ducrest Partners · Lagos &amp; Abuja</p>
